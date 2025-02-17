@@ -1,8 +1,65 @@
+/* Estilo Geral*/
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: var(--font-family);
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #000;
+  height: 100vh;
+}
+
+.interface {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilo do Cabeçalo */
+
+header {
+  padding: 40px 4%;
+}
+
+.logo-site {
+  width: 20vh;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #5c5c5c;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex; /*Adiciona flexbox para alinhar os itens*/
+  gap: 20px; /*Espaçamento entre os itens */
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px; /* Remove o padding excessivo */
+}
+
+header .btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #9003acd7;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 8;
+}
