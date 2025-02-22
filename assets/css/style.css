@@ -13,8 +13,24 @@ body {
 }
 
 .interface {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1280px;
+  margin: 50px auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #66027ad3;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  border: none;
+  transition: 0.2s;
 }
 
 /* Estilo do Cabeçalo */
@@ -24,7 +40,7 @@ header {
 }
 
 .logo-site {
-  width: 20vh;
+  width: 150px;
 }
 
 header > .interface {
@@ -34,8 +50,10 @@ header > .interface {
 }
 
 header a {
-  color: #5c5c5c;
+  color: #7d7d7d;
   text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
 }
 
 header a:hover {
@@ -45,8 +63,6 @@ header a:hover {
 
 header nav ul {
   list-style-type: none;
-  display: flex; /*Adiciona flexbox para alinhar os itens*/
-  gap: 20px; /*Espaçamento entre os itens */
 }
 
 header nav ul li {
@@ -54,18 +70,53 @@ header nav ul li {
   padding: 0 40px; /* Remove o padding excessivo */
 }
 
-header .btn-contato button {
-  padding: 10px 40px;
-  font-size: 18px;
-  font-weight: 600;
-  background-color: #9003acd7;
-  border-radius: 30px;
-  cursor: pointer;
-  border: 8;
-  border: none;
+.btn-contato button:hover {
+  box-shadow: 0px 0px 8px #532764;
+  transform: scale(1.05);
 }
 
-header .btn-contato button:hover {
+/* ESTILO DO TOPO DO SITE */
 
-  box-shadow: 0px 0px 8px #532764;
+section .topo-do-site {
+  padding: 40px 4%;
+  background-color: aqua;
+}
+
+section .topo-do-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.topo-do-site h1 {
+  font-size: 42px;
+  color: #fff;
+  line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+  color: #66027a;
+}
+
+.topo-do-site .txt-topo-site p {
+  color: #fff;
+  margin: 80px 0;
+}
+
+.topo-do-site .img-topo-site img {
+  position: relative;
+  animation: flutuar 3s ease-in-out infinite;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+@keyframes flutuar {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
 }
