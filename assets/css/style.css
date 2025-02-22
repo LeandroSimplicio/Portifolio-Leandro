@@ -1,79 +1,122 @@
-/* reset */
+/* Estilo Geral*/
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-} 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
-body{
+body {
   background-color: #000;
   height: 100vh;
-
 }
 
 .interface {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1280px;
+  margin: 50px auto;
 }
 
-/* cabecalho */
+.flex {
+  display: flex;
+}
 
-header{
+.btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #66027ad3;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  border: none;
+  transition: 0.2s;
+}
+
+/* Estilo do Cabeçalo */
+
+header {
   padding: 40px 4%;
- 
 }
 
-header > .interface{
+.logo-site {
+  width: 150px;
+}
+
+header > .interface {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header a{
+header a {
   color: #7d7d7d;
   text-decoration: none;
   display: inline-block;
-  transition: .2s;
-
+  transition: 0.2s;
 }
 
-header a:hover{
+header a:hover {
   color: #fff;
   transform: scale(1.05);
-  
-
 }
 
-header nav ul{
+header nav ul {
   list-style-type: none;
 }
 
-header nav ul li{
+header nav ul li {
   display: inline-block;
-  padding: 0 40px;
+  padding: 0 40px; /* Remove o padding excessivo */
 }
 
-header .btn-contato button{
-  padding: 10px 40px;
-  font-size: 18px;
-  font-weight: 600;
-  background-color: #7f096a;
-  border: 0;
-  border-radius: 30px;
+.btn-contato button:hover {
+  box-shadow: 0px 0px 8px #532764;
+  transform: scale(1.05);
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+section .topo-do-site {
+  padding: 40px 4%;
+  background-color: aqua;
+}
+
+section .topo-do-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.topo-do-site h1 {
+  font-size: 42px;
   color: #fff;
-  cursor: pointer;
-  transition: 0.5s;
-  
+  line-height: 40px;
 }
 
-header .btn-contato button:hover{
-  box-shadow: 0px 0px 8px #5b094c6d;
+.topo-do-site .txt-topo-site h1 span {
+  color: #66027a;
 }
 
+.topo-do-site .txt-topo-site p {
+  color: #fff;
+  margin: 80px 0;
+}
 
+.topo-do-site .img-topo-site img {
+  position: relative;
+  animation: flutuar 3s ease-in-out infinite;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
 
-.logo-site{
-  width: 150px;
+@keyframes flutuar {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
 }
