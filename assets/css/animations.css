@@ -1,0 +1,11 @@
+/* Animações */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+  }
+  
+  .float-effect {
+    position: relative;
+    animation: float 3s ease-in-out infinite;
+  }
+  

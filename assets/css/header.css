@@ -1,0 +1,35 @@
+/* Estilos específicos do header */
+header {
+    padding: 40px 4%;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+  }
+  
+  .nav-item {
+    display: inline-block;
+    padding: 0 40px;
+  }
+  
+  .nav-link {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+  }
+  
+  .nav-link:hover {
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  .logo {
+    width: 150px;
+  }
