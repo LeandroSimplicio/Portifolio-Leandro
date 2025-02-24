@@ -1,6 +1,6 @@
 /* Estilos específicos do header */
 header {
-    padding: 40px 4%;
+    padding:20px clamp(20px, 4%, 60px)
   }
   
   .header-content {
