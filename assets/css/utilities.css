@@ -5,5 +5,27 @@
   
   .container {
     max-width: 1280px;
-    margin: 50px auto;
+    margin:calc(var(--line-spacing) * 3.125) auto;
   }
+
+  h2.skill__title {
+    color: var(--background-light);
+    font-size: var(--font-size-title); /* Usa a variável com clamp() */
+    text-align: center;
+    margin: var(--line-spacing) 0; /* Espaçamento responsivo */
+  }
+  
+  h2.skill__title::before,
+  h2.skill__title::after {
+    content: "";
+    display: block;
+    width: var(--line-width); /* Largura responsiva */
+    height: var(--line-height);
+    background-color: var(--background-light);
+    margin: var(--line-spacing) auto; /* Espaçamento responsivo */
+  }
+
+  h2.skill__title span {
+    color: var(--primary-color);
+  }
+

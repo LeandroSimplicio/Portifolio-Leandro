@@ -23,23 +23,28 @@
     <title>Portifólio Leandro</title>
   </head>
   <body>
-    <header>
-      <div class="header-content">
-        <div class="logo">
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo">
           <a href="#">
             <img src="assets/img/logo.jpg" alt="Logo do site" class="logo" />
           </a>
         </div>
-        <!--logo-->
 
-        <nav>
-          <ul class="nav-list">
-            <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
-            <li class="nav-item">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="nav-link">Inicio</a>
+            </li>
+            <li class="header__nav-item">
               <a href="#" class="nav-link">Especialidades</a>
             </li>
-            <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+            <li class="header__nav-item">
+              <a href="#" class="nav-link">Sobre</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="nav-link">Projetos</a>
+            </li>
           </ul>
         </nav>
 
@@ -48,14 +53,12 @@
             <button class="btn btn-primary">Contato</button>
           </a>
         </div>
-        <!--Contato-->
       </div>
-      <!--header-content-->
     </header>
 
     <main>
       <section class="hero">
-        <div class="interface">
+        <div class="hero__content">
           <div class="flex hero-content">
             <div class="txt-topo-site">
               <h1 class="hero-title">
@@ -93,34 +96,54 @@
 
       <section class="skills">
         <div class="skill__content">
-          <h2>MINHAS <span>ESPECIALIDADES</span></h2>
-          <div class="skill__list">
+          <!--interface-->
+          <h2 class="skill__title">MINHAS <span>ESPECIALIDADES</span></h2>
+          <div class="flex">
             <div class="skill__item">
+              <!--especialidades-box-->
               <i class="bi bi-file-code"></i>
               <h3>Desenvolvimento Web</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit tenetur expedita alias quaerat, tempore delectus amet dolore optio? Aliquam doloremque aspernatur iure alias sapiente delectus ut cupiditate odit quae ratione?</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+                tenetur expedita alias quaerat, tempore delectus amet dolore
+                optio? Aliquam doloremque aspernatur iure alias sapiente
+                delectus ut cupiditate odit quae ratione?
+              </p>
             </div>
+            <!--skill__item-->
 
-            <div class="skill__item2">
+            <div class="skill__item">
               <i class="bi bi-cart"></i>
               <h3>E-commerce</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit tenetur expedita alias quaerat, tempore delectus amet dolore optio? Aliquam doloremque aspernatur iure alias sapiente delectus ut cupiditate odit quae ratione?</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+                tenetur expedita alias quaerat, tempore delectus amet dolore
+                optio? Aliquam doloremque aspernatur iure alias sapiente
+                delectus ut cupiditate odit quae ratione?
+              </p>
             </div>
+            <!--skill__item-->
 
-            <div class="skill__item3">
-              <i class="bi bi-file-code"></i>
+            <div class="skill__item">
+              <i class="bi bi-wordpress"></i>
               <h3>Blogs</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit tenetur expedita alias quaerat, tempore delectus amet dolore optio? Aliquam doloremque aspernatur iure alias sapiente delectus ut cupiditate odit quae ratione?</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+                tenetur expedita alias quaerat, tempore delectus amet dolore
+                optio? Aliquam doloremque aspernatur iure alias sapiente
+                delectus ut cupiditate odit quae ratione?
+              </p>
             </div>
+            <!--skill__item-->
 
             <!-- Conteúdo das especialidades aqui -->
           </div>
           <!--flex-->
         </div>
-        <!--interface-->
+        <!--skill__content-->
       </section>
-      
-      <!--especialidades-->
+
+      <!--skills-->
     </main>
   </body>
 </html>

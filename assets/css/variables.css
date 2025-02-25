@@ -1,0 +1,18 @@
+:root {
+  /* Cores */
+  --primary-color: #66027ad3; /* Roxo principal */
+  --secondary-color: #532764; /* Roxo secundário */
+  --text-color: #7d7d7d; /* Cor do texto */
+  --background-light: #f9f9f9; /* Fundo claro */
+  --white: #fff; /* Branco */
+
+  /* Tamanhos */
+  --font-size-title: clamp(1.5rem, 4vw + 1rem, 2.5rem); /* Título responsivo */
+  --font-size-text: 1rem; /* Texto padrão */
+  --spacing-unit: 16px; /* Unidade base para espaçamentos */
+  --border-radius: 20px; /* Bordas arredondadas */
+
+  /* Outros */
+  --box-shadow: 0px 0px 8px #532764; /* Sombra */
+  --transition: 0.2s; /* Transição padrão */
+}
