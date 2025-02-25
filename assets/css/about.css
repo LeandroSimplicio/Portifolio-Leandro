@@ -1,0 +1,29 @@
+.about {
+    padding: calc(var(--spacing-unit) * 2.5);
+  }
+
+  .about .flex {
+    align-items: center;
+    gap: clamp(30px, 5vw, 60px);
+  }
+
+  .about__description {
+    margin-bottom: calc(var(--spacing-unit) * 2);
+    color: var(--white);
+  }
+
+  .about__description h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+
+  .about__description h2 span {
+    color: var(--primary-color);
+    display: block;
+  }
+
+  .about__description p {
+    margin: 20px 0;
+    text-align: justify;
+  }

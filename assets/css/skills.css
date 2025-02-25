@@ -1,5 +1,5 @@
 .skills {
-  padding: 40px 4%;
+  padding: calc(var(--spacing-unit) * 2.5);
 }
 
 .skills .flex {
@@ -8,14 +8,14 @@
 .skill__item {
   color: var(--background-light);
   padding: calc(var(--spacing-unit) * 2.5);
-  border: 2px solid var(--white);
   margin-top: 45px;
   border-radius: var(--border-radius);
+  transition: 1s;
 }
 
 .skill__item:hover {
-  background-color: var(--primary-color);
-  transition: background-color var(--transition);
+  transform: scale(1.05);
+  box-shadow: 0 0 8px #ffffff8a;
 }
 
 .skill__item i{ 

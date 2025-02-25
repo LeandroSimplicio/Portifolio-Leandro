@@ -29,3 +29,7 @@
     color: var(--primary-color);
   }
 
+  button:hover {
+    box-shadow: var(--box-shadow);
+    transform: scale(1.05);
+  }
