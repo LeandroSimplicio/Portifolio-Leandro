@@ -25,6 +25,8 @@ section.projects {
 
 .projects .flex {
   justify-content: space-around;
+  margin-top: 60px;
+  padding: 40px 20px;  
 }
 
 .projects__item-image:hover {
@@ -37,5 +39,18 @@ section.projects {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(6, 231, 201, 0.5);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #00000075;
+    color: var(--white);
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
 }
