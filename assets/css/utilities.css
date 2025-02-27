@@ -25,11 +25,17 @@
     margin: var(--line-spacing) auto; /* Espaçamento responsivo */
   }
 
-  h2.skill__title span {
-    color: var(--primary-color);
-  }
-
   button:hover {
     box-shadow: var(--box-shadow);
     transform: scale(1.05);
+  }
+
+  h2>span {
+    color: var(--primary-color);
+  }
+
+  h2 {
+    font-size: var(--font-size-title);
+    color: var(--white);
+    margin: var(--line-spacing) 0;
   }
