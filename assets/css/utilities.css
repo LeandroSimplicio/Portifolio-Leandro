@@ -9,6 +9,7 @@
   }
 
   h2.skill__title {
+    padding: 5px 0;
     color: var(--background-light);
     font-size: var(--font-size-title); /* Usa a variável com clamp() */
     text-align: center;
