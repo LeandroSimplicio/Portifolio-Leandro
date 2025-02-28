@@ -1,0 +1,170 @@
+/* Responsividade para telas menores que 1200px */
+@media (max-width: 1200px) {
+    /* Ajustes gerais */
+    .container {
+        padding: 0 calc(var(--spacing-unit) * 2);
+    }
+
+    /* Hero Section */
+    .hero__content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Skills Section */
+    .skills .flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skill__item {
+        flex: 1 1 45%;
+        margin: 10px;
+    }
+
+    /* About Section */
+    .about .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about__image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Projects Section */
+    .projects .flex {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .projects__item-image {
+        width: 100%;
+        max-width: 300px;
+        height: 300px;
+        margin: 10px;
+    }
+
+    .overlay {
+        font-size: clamp(1rem, 4vw, 1.5rem);
+    }
+
+    /* Contact Section */
+    .contact form {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .contact form input,
+    .contact form textarea {
+        padding: calc(var(--spacing-unit) * 1.5);
+    }
+
+    .contact form button {
+        width: 100%;
+    }
+}
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+    /* Header */
+    .header__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__nav-list {
+        margin-top: 20px;
+    }
+
+    .header__nav-item {
+        padding: 0 10px;
+    }
+
+    /* Hero Section */
+    .hero-title {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    /* Skills Section */
+    .skill__item {
+        flex: 1 1 100%;
+    }
+
+    /* About Section */
+    .about__description h2 {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+    }
+
+    .about__description p {
+        font-size: 1rem;
+    }
+
+    /* Projects Section */
+    .projects__title {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+    }
+
+    .projects__item-image {
+        height: 250px;
+    }
+
+    /* Contact Section */
+    .contact form input,
+    .contact form textarea {
+        padding: calc(var(--spacing-unit) * 1);
+    }
+}
+
+/* Responsividade para telas menores que 480px */
+@media (max-width: 480px) {
+    /* Hero Section */
+    .hero-title {
+        font-size: clamp(1.2rem, 5vw, 1.5rem);
+    }
+
+    .hero-text {
+        font-size: 0.9rem;
+    }
+
+    /* Skills Section */
+    .skill__item h3 {
+        font-size: 1.2rem;
+    }
+
+    .skill__item p {
+        font-size: 0.9rem;
+    }
+
+    /* About Section */
+    .about__description h2 {
+        font-size: clamp(1.2rem, 5vw, 1.5rem);
+    }
+
+    .about__description p {
+        font-size: 0.9rem;
+    }
+
+    /* Projects Section */
+    .projects__item-image {
+        height: 200px;
+    }
+
+    /* Contact Section */
+    .contact form input,
+    .contact form textarea {
+        padding: 10px 5px;
+    }
+}

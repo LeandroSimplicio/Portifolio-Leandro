@@ -1,8 +1,8 @@
 h2.projects__title {
   color: var(--background-light);
-  font-size: var(--font-size-title); /* Usa a variável com clamp() */
+  font-size: var(--font-size-title);
   text-align: center;
-  margin: var(--line-spacing) 0; /* Espaçamento responsivo */
+  margin: var(--line-spacing) 0;
 }
 
 section.projects {
@@ -11,46 +11,49 @@ section.projects {
 }
 
 .projects__item-image {
-  width: 360px;
-  height: 406px;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  aspect-ratio: 1/1.2; /* Mantém a proporção da imagem */
   background-size: cover;
   background-position: 100% 0%;
   transition: 5s;
   cursor: pointer;
-  border-radius: 40px;
+  border-radius: var(--border-radius);
   position: relative;
-
-
 }
 
 .projects .flex {
   justify-content: space-around;
-  margin-top: 60px;
-  padding: 40px 20px;  
+  flex-wrap: wrap;
+  gap: 20px;
+  border-radius: 45%;
+  margin-top: calc(var(--spacing-unit) * 3.75);
+  padding: calc(var(--spacing-unit) * 2.5);
 }
 
 .projects__item-image:hover {
   background-position: 100% 100%;
 }
 
-.overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: 600;
-    background-color: #00000075;
-    color: var(--white);
-    opacity: 0;
-    transition: .5s;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  font-weight: 600;
+  background-color: #00000075;
+  color: var(--white);
+  opacity: 0;
+  transition: 0.5s;
 }
 
-.overlay:hover{
-    opacity: 1;
+.overlay:hover {
+  opacity: 1;
 }

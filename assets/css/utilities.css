@@ -1,4 +1,8 @@
     /* Classes utilitárias */
+html {
+    scroll-behavior: smooth;
+  }
+
 .flex {
     display: flex;
   }

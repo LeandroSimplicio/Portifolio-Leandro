@@ -1,6 +1,8 @@
 /* Estilos específicos do header */
 header {
   padding: var(--spacing-unit) clamp(20px, 4%, 60px);
+  
+
   }
   
   .header__content {
