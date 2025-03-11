@@ -16,8 +16,8 @@
 
   .btn-social button{
 
-    width: calc(var(--spacing-unit) * 5);
-    height: calc(var(--spacing-unit) * 5);
+    width: calc(var(--spacing-unit) * 4);
+    height: calc(var(--spacing-unit) * 4);
     border-radius: 50%;
     border: none;
     background-color: var(--primary-color);
