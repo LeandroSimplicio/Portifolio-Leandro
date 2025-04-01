@@ -47,3 +47,12 @@ form button {
   width: 120px;
   
 }
+
+.btn-resume {
+  background: #2ecc71; /* Cor diferente para destacar */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+}
