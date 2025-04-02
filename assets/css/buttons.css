@@ -26,3 +26,12 @@
     margin: 0 10px;
     transition: var(--transition);
   }
+
+.btn-resume {
+  background: #2ecc71; /* Cor diferente para destacar */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+}
