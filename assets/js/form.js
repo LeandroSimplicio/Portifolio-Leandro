@@ -17,3 +17,6 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     // Redireciona para o WhatsApp
     window.location.href = whatsappLink;
 });
+
+
+
