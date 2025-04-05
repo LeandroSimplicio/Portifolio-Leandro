@@ -30,7 +30,8 @@ b<!DOCTYPE html>
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <!--BOOTSTRAP Icons-->
-    <title>Portfolios Leandro</title>
+
+  <title>Portfolios Leandro</title>
   </head>
   <body>
     <header class="header" id="header">
@@ -40,6 +41,7 @@ b<!DOCTYPE html>
             <img src="assets/img/logo.jpg" alt="Logo do site" class="logo" />
           </a>
         </div>
+        <!--logo-->
 
         <nav class="header__nav">
           <ul class="header__nav-list">
@@ -63,15 +65,42 @@ b<!DOCTYPE html>
             <button class="btn btn-primary">Contato</button>
           </a>
         </div>
+        <!--btn-contato-->
 
-        <!-- Ícone do menu hambúrguer -->
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="btn_open" id="btn_open">
+          <i class="bi bi-list"></i>
         </div>
         <!-- Ícone do menu hambúrguer -->
+        <div class="hamburger-button" id="hamburger-button">
+          <div class="btn-close">
+            <i class="bi bi-x-lg"></i>
+          </div>
+
+          <nav class="header__nav-mobile">
+            <ul class="header__nav-list-mobile">
+              <li>
+                <a href="#hero">Inicio</a>
+              </li>
+              <li>
+                <a href="#skills">Especialidades</a>
+              </li>
+              <li>
+                <a href="#about">Sobre</a>
+              </li>
+              <li>
+                <a href="#projects">Projetos</a>
+              </li>
+              <li>
+                <a href="#contact">Contato</a>
+              </li>
+            </ul>
+          </nav>
+
+        </div> <!--hamburger-button-->
+        <div class="overlay__menu"></div>
+
       </div>
+      <!--header__content-->
     </header>
     <section class="banner"></section>
 
@@ -84,10 +113,9 @@ b<!DOCTYPE html>
                 TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span>
               </h1>
               <p class="hero-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
-                sequi cupiditate quis? Possimus nesciunt dolor, commodi suscipit
-                consectetur rem cumque aperiam est tempore quibusdam beatae
-                asperiores qui reiciendis eum quos.
+                ​"Leandro Simplicio – Desenvolvedor Front-End em Formação" ​<br />"Construindo
+                interfaces intuitivas e responsivas. Aprendendo e crescendo no
+                universo do desenvolvimento web com HTML, CSS e JavaScript."
               </p>
 
               <div class="btn-contato">
@@ -178,7 +206,7 @@ b<!DOCTYPE html>
             <!--about__image-->
 
             <div class="about__description">
-              <h2>MUITO PRAZER,<span>SOU LEANDRO SIMPLICIO</span></h2>
+              <h2>MUITO PRAZER,<span>SOU LEANDRO SIMPLICIO.</span></h2>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum,
                 distinctio sapiente aliquam est praesentium possimus rem alias
@@ -310,13 +338,14 @@ b<!DOCTYPE html>
             <div class="btn-group">
               <!--btn-group-->
               <button type="submit" class="btn btn-primary">Enviar</button>
+
+              <!--btn-->
               <i class="ri-file-download-line"></i> Baixar Currículo
 
               <a
                 href="/assets/Leandro Curriculo.pdf.pdf"
                 download
                 class="btn-resume"
-                style="margin-left: 12px"
               >
                 <i class="ri-file-download-line"></i> Baixar Currículo
               </a>
@@ -363,6 +392,8 @@ b<!DOCTYPE html>
       </footer>
       <!--footer-->
     </main>
-    <script src="assets/js/form.js"></script>
+    <script src="assets/js/main.js" defer></script>
+
+
   </body>
 </html>

@@ -1,3 +1,8 @@
+section.projects {
+  padding: var(--line-spacing);
+  box-shadow: 0 0 40px 10px #ffffff3a;
+}
+
 h2.projects__title {
   color: var(--background-light);
   font-size: var(--font-size-title);
@@ -5,10 +10,7 @@ h2.projects__title {
   margin: var(--line-spacing) 0;
 }
 
-section.projects {
-  padding: var(--line-spacing);
-  box-shadow: 0 0 40px 10px #ffffff3a;
-}
+
 
 .projects__item-image {
   width: 100%;

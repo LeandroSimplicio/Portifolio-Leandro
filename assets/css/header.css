@@ -1,37 +1,100 @@
 /* Estilos específicos do header */
 header {
   padding: var(--spacing-unit) clamp(20px, 4%, 60px);
-  
+}
 
-  }
-  
-  .header__content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .header__nav-list {
-    list-style-type: none;
-  }
-  
-  .header__nav-item {
-    display: inline-block;
-    padding: 0 calc(var(--spacing-unit) * 2.5);
-  }
-  
-  .nav-link {
-    color: var(--text-color);
-    text-decoration: none;
-    display: inline-block;
-    transition: 0.2s;
-  }
-  
-  .nav-link:hover {
-    color: var(--white);
-    transform: scale(1.05);
-  }
-  
-  .logo {
-    width: 150px;
-  }
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav-list {
+  list-style-type: none;
+}
+
+.header__nav-item {
+  display: inline-block;
+  padding: 0 calc(var(--spacing-unit) * 2.5);
+}
+
+.nav-link {
+  color: var(--text-color);
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--white);
+  transform: scale(1.05);
+}
+
+.logo {
+  width: 150px;
+}
+
+/* Estilo do menu mobie */
+.btn_open i	{
+  color: var(--white);
+  font-size: 40px;
+}
+
+.hamburger-button {
+  background-color: #000;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+  width: 0%;
+  overflow: hidden;
+  transition: width 0.3s ease; /* <<< adicionado */
+}
+
+
+.hamburger-button.open{
+  width: 100%;
+
+}
+
+.hamburger-button .btn-close i {
+  color: var(--primary-color);
+  font-size: 30px;
+}
+
+.hamburger-button .btn-close{
+  padding: 20px 5%;
+}
+.header__nav-list-mobile {
+  text-align: right;
+  list-style-type: none;
+}
+
+.header__nav-list-mobile li a {
+  color: var(--white);
+  font-size: var(--font-size-text);
+  font-weight: 300;
+  padding: 20px 4%;
+  display: block;
+}
+
+.header__nav-list-mobile li a:hover {
+  background-color: var(--primary-color);
+  color: #000;
+}
+
+.overlay__menu {
+  background-color: #000000a7;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  z-index: 8888;
+  display: none;
+}
+
+.overlay__menu.show {
+  display: block;
+}
