@@ -100,3 +100,27 @@
     display: block;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .btn_open {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .btn_open {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .btn_open {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .btn_open {
+    display: none;
+  }
+}
