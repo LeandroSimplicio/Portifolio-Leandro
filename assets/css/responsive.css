@@ -119,7 +119,7 @@
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (max-width: 1400px) {
   .btn_open {
     display: none;
   }
