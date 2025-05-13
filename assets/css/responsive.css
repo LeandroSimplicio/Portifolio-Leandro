@@ -103,19 +103,20 @@
 
 }
 
-@media screen and (max-width: 768px) {
-  .btn_open {
-    display: block;
-  }
-}
-
-/* @media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .btn_open {
     display: none;
   }
 }
 
-@media screen and (max-width: 1200px) {
+
+@media screen and (min-width: 1024px) {
+  .btn_open {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .btn_open {
     display: none;
   }
@@ -125,4 +126,5 @@
   .btn_open {
     display: none;
   }
-} */
+} 
+
