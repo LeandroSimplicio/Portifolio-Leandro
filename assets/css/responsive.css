@@ -99,15 +99,17 @@
   .contact .btn-resume {
     display: block;
   }
+
+
 }
 
 @media screen and (max-width: 768px) {
   .btn_open {
-    display: none;
+    display: block;
   }
 }
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   .btn_open {
     display: none;
   }
@@ -119,8 +121,8 @@
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 1400px) {
   .btn_open {
     display: none;
   }
-}
+} */
