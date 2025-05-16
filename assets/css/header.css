@@ -1,6 +1,11 @@
 /* Estilos específicos do header */
 header {
-  padding: var(--spacing-unit) clamp(20px, 4%, 60px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+  background-color: #000;
 }
 
 .header__content {

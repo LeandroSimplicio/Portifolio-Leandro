@@ -8,6 +8,7 @@ h2.projects__title {
   font-size: var(--font-size-title);
   text-align: center;
   margin: var(--line-spacing) 0;
+  padding: 1.8rem;
 }
 
 

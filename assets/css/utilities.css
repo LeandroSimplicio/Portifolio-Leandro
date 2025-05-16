@@ -1,7 +1,11 @@
     /* Classes utilitárias */
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 10rem; /* Ajuste conforme a altura do seu cabeçalho */
+}
 
 .flex {
     display: flex;
@@ -13,7 +17,8 @@ html {
   }
 
   h2.skill__title {
-    padding: 5px 0;
+    padding: 5px 5px 0;
+    font-weight: 700;
     color: var(--background-light);
     font-size: var(--font-size-title); /* Usa a variável com clamp() */
     text-align: center;
@@ -44,3 +49,7 @@ html {
     color: var(--white);
     margin: var(--line-spacing) 0;
   }
+
+  .menu-spacing {
+  height: 65px;
+}

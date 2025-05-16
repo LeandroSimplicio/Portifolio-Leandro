@@ -1,6 +1,7 @@
 .hero {
   padding-top: 189px; /* Altura do header */
   padding: calc(var(--spacing-unit) * 5) 6%;
+  margin-top: 50px;
 }
 
 .hero__content {
