@@ -20,7 +20,7 @@ Html | CSS | Javascript
 
 ## Melhorias
 
-Estou estudando react então estou a todo momento aprendo coisas novas para estar melhando e deixar ele mais apresentavel possivel para todos.
+Estou estudando react então estou a todo momento aprendo coisas novas para estar melhorando e deixar ele mais apresentavel possivel para todos.
 
 
 ## Demonstração
