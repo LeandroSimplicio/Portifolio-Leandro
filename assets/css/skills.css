@@ -11,6 +11,7 @@
   margin-top: 45px;
   border-radius: var(--border-radius);
   transition: 1s;
+  width: 50%;
 }
 
 .skill__item:hover {
@@ -21,9 +22,11 @@
 .skill__item i{ 
   font-size: 4rem;
   margin-bottom: 1rem;
+    
 }
 
 .skill__item h3 {
   font-size: var(--font-size-text);
   margin-bottom: 0.5rem;
 } 
+
